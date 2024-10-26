@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne per riga */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+#view-cart {
+    background-color: #2c2929;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#close-cart {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product img {
+    width: 200px; /* Occupa tutta la larghezza del contenitore */
+    height: 200px; /* Imposta un'altezza fissa, oppure "auto" per mantenere il rapporto */
+    object-fit: cover; /* Ritaglia l'immagine per riempire il contenitore */
+    border-radius: 5px; /* Arrotonda leggermente gli angoli */
+    margin-bottom: 10px; /* Spazio tra l'immagine e gli altri elementi */
+}
+
+.out-of-stock {
+    opacity: 0.6; /* Rende l'articolo trasparente */
+    pointer-events: none; /* Disabilita gli eventi del mouse, rendendolo non cliccabile */
+}
+
+.out-of-stock button {
+    background-color: #ccc; /* Cambia il colore del pulsante per indicare che è disabilitato */
+    cursor: not-allowed; /* Cambia il cursore per indicare che non è possibile cliccare */
+}

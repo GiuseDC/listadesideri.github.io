@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Comics Shop</h1>
+    </header>
+    
+    <main>
+        <div class="products">
+            <div class="product" data-id="1" data-name="Venom Rex" data-price="16.15">
+                <img src="venomrex.jpg" alt="Venom Rex">
+                <h2>Venom Rex</h2>
+                <p>€16.15</p>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+            <div class="product" data-id="2" data-name="Venom L'Abisso" data-price="16.15">
+                <img src="venomabisso.jpg" alt="Venom L'Abisso">
+                <h2>Venom L'Abisso</h2>
+                <p>€16.15</p>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+            <div class="product" data-id="3" data-name="Venom Carnage Scatenato" data-price="16.15">
+                <img src="venom3.jpg" alt="Venom Carnage Scatenato">
+                <h2>Venom Carnage Scatenato</h2>
+                <p>€16.15</p>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+            <div class="product" data-id="4" data-name="Venom La Guerra Dei Regni" data-price="15.20">
+                <img src="venom4.jpg" alt="Venom La Guerra Dei Regni">
+                <h2>Venom La Guerra Dei Regni</h2>
+                <p>€15.20</p>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+            <div class="product" data-id="5" data-name="Absolute Carnage" data-price="21.85">
+                <img src="abscarnage.jpg" alt="Absolute Carnage">
+                <h2>Absolute Carnage</h2>
+                <p>€21.85</p>
+                <button class="add-to-cart">Aggiungi al carrello</button>
+            </div>
+            <div class="product out-of-stock" data-id="6" data-name="Venom Absolute Carnage" data-price="">
+                <img src="venomabscarnage.jpg" alt="Venom Absolute Carnage">
+                <h2>Venom Absolute Carnage</h2>
+                <p>ESAURITO</p>
+                <button class="add-to-cart" disabled>Aggiungi al carrello</button>
+            </div>
+            <div class="product out-of-stock" data-id="7" data-name="Venom Island" data-price="">
+                <img src="venomisland.jpg" alt="Venom Island">
+                <h2>Venom Island</h2>
+                <p>ESAURITO</p>
+                <button class="add-to-cart" disabled>Aggiungi al carrello</button>
+            </div>
+            <div class="product" data-id="8" data-name="Venom Beyond" data-price="15.20">
+                <img src="venbeyond.jpg" alt="Venom Beyond">
+                <h2>Venom Beyond</h2>
+                <p>€15.20</p>
+                <button class="add-to-cart" >Aggiungi al carrello</button>
+            </div>
+            <div class="product out-of-stock" data-id="9" data-name="King in Black: Regna l'Oscurità" data-price="">
+                <img src="kib.jpg" alt="King in Black: Regna l'Oscurità">
+                <h2>King in Black: Regna l'Oscurità</h2>
+                <p>ESAURITO</p>
+                <button class="add-to-cart" disabled>Aggiungi al carrello</button>
+            </div>
+            <div class="product out-of-stock" data-id="10" data-name="Venom King in Black" data-price="">
+                <img src="venomkib.jpg" alt="Venom King in Black">
+                <h2>Venom King in Black</h2>
+                <p>ESAURITO</p>
+                <button class="add-to-cart" disabled>Aggiungi al carrello</button>
+            </div>
+            <!-- Puoi aggiungere altri articoli qui
+             <div class="" data-id="" data-name="" data-price="">
+                <img src="" alt="">
+                <h2></h2>
+                <p>€</p>
+                <button class="add-to-cart" >Aggiungi al carrello</button>
+            </div> -->
+        </div>
+    </main>
+    
+    <footer>
+        <button id="view-cart">Visualizza Carrello</button>
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <h2>Carrello</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Totale: €0.00</p>
+                <button id="close-cart">Chiudi</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
